@@ -1,0 +1,1107 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D803FCA423F10C02001609E1 /* DeckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D803FCA323F10C02001609E1 /* DeckManager.swift */; };
+		D803FCA623F11948001609E1 /* DeckCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D803FCA523F11948001609E1 /* DeckCreator.swift */; };
+		D80C3684242DD39600E36614 /* ValueDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80C3683242DD39600E36614 /* ValueDefinitions.swift */; };
+		D80C3685242DD39600E36614 /* ValueDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80C3683242DD39600E36614 /* ValueDefinitions.swift */; };
+		D80C368E242DD64200E36614 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80C368D242DD64200E36614 /* CardModel.swift */; };
+		D80C3690242DD66500E36614 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80C368F242DD66500E36614 /* KeyboardResponder.swift */; };
+		D80E5F5A24121567000BA18A /* ColorSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E5F5924121567000BA18A /* ColorSelector.swift */; };
+		D838FB4223E602690023FDD9 /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FB4123E602690023FDD9 /* CardModifier.swift */; };
+		D83A3C2C2430891C000B4975 /* OpenSourceAttributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83A3C2B2430891C000B4975 /* OpenSourceAttributionsView.swift */; };
+		D8745210242DB41D00F42655 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1563E238B022200B6903B /* CardView.swift */; };
+		D874751323FE4EA30027EA60 /* DeckEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874751223FE4EA30027EA60 /* DeckEditor.swift */; };
+		D88BEACB23B54671009F67DB /* DeckSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88BEACA23B54671009F67DB /* DeckSelector.swift */; };
+		D89ABD942379342F00CF523D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89ABD932379342F00CF523D /* AppDelegate.swift */; };
+		D89ABD962379342F00CF523D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89ABD952379342F00CF523D /* SceneDelegate.swift */; };
+		D89ABD982379342F00CF523D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89ABD972379342F00CF523D /* ContentView.swift */; };
+		D89ABD9A2379343100CF523D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89ABD992379343100CF523D /* Assets.xcassets */; };
+		D89ABD9D2379343100CF523D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89ABD9C2379343100CF523D /* Preview Assets.xcassets */; };
+		D89ABDA02379343100CF523D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89ABD9E2379343100CF523D /* LaunchScreen.storyboard */; };
+		D89ABDB02379343100CF523D /* Planning Cards WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D89ABDAF2379343100CF523D /* Planning Cards WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D89ABDB62379343100CF523D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89ABDB42379343100CF523D /* Interface.storyboard */; };
+		D89ABDB82379343200CF523D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89ABDB72379343200CF523D /* Assets.xcassets */; };
+		D89ABDBF2379343200CF523D /* Planning Cards WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D89ABDBE2379343200CF523D /* Planning Cards WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D89ABDC42379343200CF523D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89ABDC32379343200CF523D /* ContentView.swift */; };
+		D89ABDC62379343200CF523D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89ABDC52379343200CF523D /* HostingController.swift */; };
+		D89ABDC82379343200CF523D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89ABDC72379343200CF523D /* ExtensionDelegate.swift */; };
+		D89ABDCA2379343200CF523D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89ABDC92379343200CF523D /* Assets.xcassets */; };
+		D89ABDCD2379343200CF523D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89ABDCC2379343200CF523D /* Preview Assets.xcassets */; };
+		D89ABDE12379353100CF523D /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D89ABDDF2379353100CF523D /* DataModel.xcdatamodeld */; };
+		D8A11AFC243A7CC30027254B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A11AFB243A7CC30027254B /* SnapshotHelper.swift */; };
+		D8A11B0E243CD0F20027254B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8A11B00243C3B160027254B /* InfoPlist.strings */; };
+		D8A11B10243CD1A90027254B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8A11B00243C3B160027254B /* InfoPlist.strings */; };
+		D8A11B11243D2FBF0027254B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8A3F1FA2432B07C0037B840 /* Localizable.strings */; };
+		D8A11B14243D306B0027254B /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80C368D242DD64200E36614 /* CardModel.swift */; };
+		D8A11B16243D30960027254B /* SharedLocalizationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A11B15243D30960027254B /* SharedLocalizationClass.swift */; };
+		D8A11B17243D30960027254B /* SharedLocalizationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A11B15243D30960027254B /* SharedLocalizationClass.swift */; };
+		D8A3F1F62432B07C0037B840 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8A3F1F42432B07C0037B840 /* InfoPlist.strings */; };
+		D8A3F1F92432B07C0037B840 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8A3F1F72432B07C0037B840 /* Localizable.strings */; };
+		D8A3F1FC2432B07C0037B840 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8A3F1FA2432B07C0037B840 /* Localizable.strings */; };
+		D8B058C7237FC6DA00E4199B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B058C6237FC6DA00E4199B /* DataManager.swift */; };
+		D8B1563A238AFBB400B6903B /* Grid in Frameworks */ = {isa = PBXBuildFile; productRef = D8B15639238AFBB400B6903B /* Grid */; };
+		D8B1563F238B022200B6903B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1563E238B022200B6903B /* CardView.swift */; };
+		D8B9D02A243A4A6E006EC23E /* Planning_Cards_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B9D029243A4A6E006EC23E /* Planning_Cards_UITests.swift */; };
+		D8BF989B238B969A0034D8E1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BF989A238B969A0034D8E1 /* SettingsView.swift */; };
+		D8CB34AE242C8EFE006A5B85 /* WatchSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CB34AD242C8EFE006A5B85 /* WatchSessionController.swift */; };
+		D8CB34AF242C8EFE006A5B85 /* WatchSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CB34AD242C8EFE006A5B85 /* WatchSessionController.swift */; };
+		D8DD49DB23FFAA1E00EC0087 /* DeckConfigurationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD49DA23FFAA1E00EC0087 /* DeckConfigurationSection.swift */; };
+		D8DD49DD23FFAA6500EC0087 /* CardConfigurationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD49DC23FFAA6500EC0087 /* CardConfigurationSection.swift */; };
+		D8FAB24F242D78F000808385 /* Grid in Frameworks */ = {isa = PBXBuildFile; productRef = D8FAB24E242D78F000808385 /* Grid */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D89ABDB12379343100CF523D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D89ABD882379342F00CF523D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89ABDAE2379343100CF523D;
+			remoteInfo = "Planning Cards WatchKit App";
+		};
+		D89ABDC02379343200CF523D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D89ABD882379342F00CF523D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89ABDBD2379343200CF523D;
+			remoteInfo = "Planning Cards WatchKit Extension";
+		};
+		D8B9D02C243A4A6E006EC23E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D89ABD882379342F00CF523D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89ABD8F2379342F00CF523D;
+			remoteInfo = "Planning Cards";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D89ABDD42379343200CF523D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D89ABDBF2379343200CF523D /* Planning Cards WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89ABDD82379343200CF523D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D89ABDB02379343100CF523D /* Planning Cards WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D803FCA323F10C02001609E1 /* DeckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckManager.swift; sourceTree = "<group>"; };
+		D803FCA523F11948001609E1 /* DeckCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCreator.swift; sourceTree = "<group>"; };
+		D80C3683242DD39600E36614 /* ValueDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueDefinitions.swift; sourceTree = "<group>"; };
+		D80C368D242DD64200E36614 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		D80C368F242DD66500E36614 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		D80E5F5924121567000BA18A /* ColorSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelector.swift; sourceTree = "<group>"; };
+		D8362A0524345DB900EA8254 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D8362A0624345DB900EA8254 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Interface.strings; sourceTree = "<group>"; };
+		D8362A0724345DB900EA8254 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D8362A0824345DB900EA8254 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8362A0924345DB900EA8254 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D838337F243DA32700EB3ACA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D838FB4123E602690023FDD9 /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
+		D83A3C2B2430891C000B4975 /* OpenSourceAttributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSourceAttributionsView.swift; sourceTree = "<group>"; };
+		D86FBC4F2435539D0092FF7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D86FBC502435539D0092FF7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Interface.strings; sourceTree = "<group>"; };
+		D86FBC512435539D0092FF7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D86FBC522435539D0092FF7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D86FBC532435539D0092FF7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D874751223FE4EA30027EA60 /* DeckEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckEditor.swift; sourceTree = "<group>"; };
+		D87DB5DE243FD1F7005FBE48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D889D7B924355A9E009DF153 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D889D7BA24355A9E009DF153 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Interface.strings; sourceTree = "<group>"; };
+		D889D7BB24355A9E009DF153 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D889D7BC24355A9E009DF153 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D889D7BD24355A9E009DF153 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D88BEACA23B54671009F67DB /* DeckSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckSelector.swift; sourceTree = "<group>"; };
+		D89ABD902379342F00CF523D /* Planning Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planning Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89ABD932379342F00CF523D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D89ABD952379342F00CF523D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D89ABD972379342F00CF523D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D89ABD992379343100CF523D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D89ABD9C2379343100CF523D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D89ABD9F2379343100CF523D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D89ABDA12379343100CF523D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89ABDAF2379343100CF523D /* Planning Cards WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planning Cards WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89ABDB52379343100CF523D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D89ABDB72379343200CF523D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D89ABDB92379343200CF523D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89ABDBE2379343200CF523D /* Planning Cards WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Planning Cards WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89ABDC32379343200CF523D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D89ABDC52379343200CF523D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		D89ABDC72379343200CF523D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D89ABDC92379343200CF523D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D89ABDCC2379343200CF523D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D89ABDCE2379343200CF523D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89ABDE02379353100CF523D /* Models.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Models.xcdatamodel; sourceTree = "<group>"; };
+		D8A11AFB243A7CC30027254B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		D8A11B01243C3B170027254B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8A11B03243C3B1F0027254B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8A11B04243C3B2D0027254B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8A11B05243C3B330027254B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D8A11B15243D30960027254B /* SharedLocalizationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationClass.swift; sourceTree = "<group>"; };
+		D8A3F1F22432AF150037B840 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D8A3F1F32432AF150037B840 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Interface.strings"; sourceTree = "<group>"; };
+		D8A3F1F52432B07C0037B840 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D8A3F1F82432B07C0037B840 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D8A3F1FB2432B07C0037B840 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D8B058C6237FC6DA00E4199B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D8B1563E238B022200B6903B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D8B9D027243A4A6E006EC23E /* Planning Cards UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Planning Cards UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B9D029243A4A6E006EC23E /* Planning_Cards_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planning_Cards_UITests.swift; sourceTree = "<group>"; };
+		D8B9D02B243A4A6E006EC23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8BF989A238B969A0034D8E1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D8CB34AD242C8EFE006A5B85 /* WatchSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionController.swift; sourceTree = "<group>"; };
+		D8D89BFD243D750100CEA6E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D8DD49DA23FFAA1E00EC0087 /* DeckConfigurationSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckConfigurationSection.swift; sourceTree = "<group>"; };
+		D8DD49DC23FFAA6500EC0087 /* CardConfigurationSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardConfigurationSection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D89ABD8D2379342F00CF523D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B1563A238AFBB400B6903B /* Grid in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89ABDBB2379343200CF523D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8FAB24F242D78F000808385 /* Grid in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B9D024243A4A6E006EC23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D80C3687242DD43E00E36614 /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D89ABD972379342F00CF523D /* ContentView.swift */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+		D80C3688242DD44700E36614 /* Deck Selector */ = {
+			isa = PBXGroup;
+			children = (
+				D88BEACA23B54671009F67DB /* DeckSelector.swift */,
+			);
+			path = "Deck Selector";
+			sourceTree = "<group>";
+		};
+		D80C3689242DD45900E36614 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D8BF989A238B969A0034D8E1 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D80C368A242DD46600E36614 /* Color Selector */ = {
+			isa = PBXGroup;
+			children = (
+				D80E5F5924121567000BA18A /* ColorSelector.swift */,
+			);
+			path = "Color Selector";
+			sourceTree = "<group>";
+		};
+		D80C368B242DD4A400E36614 /* Deck Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D803FCA323F10C02001609E1 /* DeckManager.swift */,
+			);
+			path = "Deck Manager";
+			sourceTree = "<group>";
+		};
+		D80C368C242DD61600E36614 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D80C368F242DD66500E36614 /* KeyboardResponder.swift */,
+				D8A11B15243D30960027254B /* SharedLocalizationClass.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8213F022430934F00C4C65F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D80C368D242DD64200E36614 /* CardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D83A3C28243087D3000B4975 /* Open Source Attributions */ = {
+			isa = PBXGroup;
+			children = (
+				D83A3C2B2430891C000B4975 /* OpenSourceAttributionsView.swift */,
+			);
+			path = "Open Source Attributions";
+			sourceTree = "<group>";
+		};
+		D89ABD872379342F00CF523D = {
+			isa = PBXGroup;
+			children = (
+				D8CB34A6242C8D05006A5B85 /* Shared */,
+				D89ABD922379342F00CF523D /* Planning Cards */,
+				D89ABDB32379343100CF523D /* Planning Cards WatchKit App */,
+				D89ABDC22379343200CF523D /* Planning Cards WatchKit Extension */,
+				D8B9D028243A4A6E006EC23E /* Planning Cards UITests */,
+				D89ABD912379342F00CF523D /* Products */,
+				D8FAB24D242D78F000808385 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D89ABD912379342F00CF523D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D89ABD902379342F00CF523D /* Planning Cards.app */,
+				D89ABDAF2379343100CF523D /* Planning Cards WatchKit App.app */,
+				D89ABDBE2379343200CF523D /* Planning Cards WatchKit Extension.appex */,
+				D8B9D027243A4A6E006EC23E /* Planning Cards UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D89ABD922379342F00CF523D /* Planning Cards */ = {
+			isa = PBXGroup;
+			children = (
+				D8213F022430934F00C4C65F /* Models */,
+				D8A9273423F55B1500A2A451 /* Views */,
+				D80C368C242DD61600E36614 /* Supporting Files */,
+				D89ABD932379342F00CF523D /* AppDelegate.swift */,
+				D8B058C6237FC6DA00E4199B /* DataManager.swift */,
+				D89ABD952379342F00CF523D /* SceneDelegate.swift */,
+				D89ABD992379343100CF523D /* Assets.xcassets */,
+				D89ABD9E2379343100CF523D /* LaunchScreen.storyboard */,
+				D89ABDA12379343100CF523D /* Info.plist */,
+				D8A3F1FA2432B07C0037B840 /* Localizable.strings */,
+				D8A3F1F42432B07C0037B840 /* InfoPlist.strings */,
+				D89ABD9B2379343100CF523D /* Preview Content */,
+				D89ABDDF2379353100CF523D /* DataModel.xcdatamodeld */,
+			);
+			path = "Planning Cards";
+			sourceTree = "<group>";
+		};
+		D89ABD9B2379343100CF523D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D89ABD9C2379343100CF523D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D89ABDB32379343100CF523D /* Planning Cards WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D89ABDB42379343100CF523D /* Interface.storyboard */,
+				D89ABDB72379343200CF523D /* Assets.xcassets */,
+				D89ABDB92379343200CF523D /* Info.plist */,
+			);
+			path = "Planning Cards WatchKit App";
+			sourceTree = "<group>";
+		};
+		D89ABDC22379343200CF523D /* Planning Cards WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D89ABDC32379343200CF523D /* ContentView.swift */,
+				D89ABDC52379343200CF523D /* HostingController.swift */,
+				D89ABDC72379343200CF523D /* ExtensionDelegate.swift */,
+				D89ABDC92379343200CF523D /* Assets.xcassets */,
+				D89ABDCE2379343200CF523D /* Info.plist */,
+				D8A11B00243C3B160027254B /* InfoPlist.strings */,
+				D8A3F1F72432B07C0037B840 /* Localizable.strings */,
+				D89ABDCB2379343200CF523D /* Preview Content */,
+			);
+			path = "Planning Cards WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D89ABDCB2379343200CF523D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D89ABDCC2379343200CF523D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8A9273423F55B1500A2A451 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D80C368A242DD46600E36614 /* Color Selector */,
+				D8A9273523F55B1A00A2A451 /* Deck Editor */,
+				D80C368B242DD4A400E36614 /* Deck Manager */,
+				D80C3688242DD44700E36614 /* Deck Selector */,
+				D80C3687242DD43E00E36614 /* Main Screen */,
+				D80C3689242DD45900E36614 /* Settings */,
+				D83A3C28243087D3000B4975 /* Open Source Attributions */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8A9273523F55B1A00A2A451 /* Deck Editor */ = {
+			isa = PBXGroup;
+			children = (
+				D803FCA523F11948001609E1 /* DeckCreator.swift */,
+				D838FB4123E602690023FDD9 /* CardModifier.swift */,
+				D874751223FE4EA30027EA60 /* DeckEditor.swift */,
+				D8DD49DA23FFAA1E00EC0087 /* DeckConfigurationSection.swift */,
+				D8DD49DC23FFAA6500EC0087 /* CardConfigurationSection.swift */,
+			);
+			path = "Deck Editor";
+			sourceTree = "<group>";
+		};
+		D8B9D028243A4A6E006EC23E /* Planning Cards UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8A11AFB243A7CC30027254B /* SnapshotHelper.swift */,
+				D8B9D029243A4A6E006EC23E /* Planning_Cards_UITests.swift */,
+				D8B9D02B243A4A6E006EC23E /* Info.plist */,
+			);
+			path = "Planning Cards UITests";
+			sourceTree = "<group>";
+		};
+		D8CB34A6242C8D05006A5B85 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D8CB34AD242C8EFE006A5B85 /* WatchSessionController.swift */,
+				D8B1563E238B022200B6903B /* CardView.swift */,
+				D80C3683242DD39600E36614 /* ValueDefinitions.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D8FAB24D242D78F000808385 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D89ABD8F2379342F00CF523D /* Planning Cards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89ABDD92379343200CF523D /* Build configuration list for PBXNativeTarget "Planning Cards" */;
+			buildPhases = (
+				D89ABD8C2379342F00CF523D /* Sources */,
+				D89ABD8D2379342F00CF523D /* Frameworks */,
+				D89ABD8E2379342F00CF523D /* Resources */,
+				D89ABDD82379343200CF523D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D89ABDB22379343100CF523D /* PBXTargetDependency */,
+			);
+			name = "Planning Cards";
+			packageProductDependencies = (
+				D8B15639238AFBB400B6903B /* Grid */,
+			);
+			productName = "Planning Cards";
+			productReference = D89ABD902379342F00CF523D /* Planning Cards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D89ABDAE2379343100CF523D /* Planning Cards WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89ABDD52379343200CF523D /* Build configuration list for PBXNativeTarget "Planning Cards WatchKit App" */;
+			buildPhases = (
+				D89ABDAD2379343100CF523D /* Resources */,
+				D89ABDD42379343200CF523D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D89ABDC12379343200CF523D /* PBXTargetDependency */,
+			);
+			name = "Planning Cards WatchKit App";
+			productName = "Planning Cards WatchKit App";
+			productReference = D89ABDAF2379343100CF523D /* Planning Cards WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D89ABDBD2379343200CF523D /* Planning Cards WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89ABDD12379343200CF523D /* Build configuration list for PBXNativeTarget "Planning Cards WatchKit Extension" */;
+			buildPhases = (
+				D89ABDBA2379343200CF523D /* Sources */,
+				D89ABDBB2379343200CF523D /* Frameworks */,
+				D89ABDBC2379343200CF523D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Planning Cards WatchKit Extension";
+			packageProductDependencies = (
+				D8FAB24E242D78F000808385 /* Grid */,
+			);
+			productName = "Planning Cards WatchKit Extension";
+			productReference = D89ABDBE2379343200CF523D /* Planning Cards WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		D8B9D026243A4A6E006EC23E /* Planning Cards UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8B9D030243A4A6E006EC23E /* Build configuration list for PBXNativeTarget "Planning Cards UITests" */;
+			buildPhases = (
+				D8B9D023243A4A6E006EC23E /* Sources */,
+				D8B9D024243A4A6E006EC23E /* Frameworks */,
+				D8B9D025243A4A6E006EC23E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8B9D02D243A4A6E006EC23E /* PBXTargetDependency */,
+			);
+			name = "Planning Cards UITests";
+			packageProductDependencies = (
+			);
+			productName = "Planning Cards UITests";
+			productReference = D8B9D027243A4A6E006EC23E /* Planning Cards UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D89ABD882379342F00CF523D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Andre Yonadam";
+				TargetAttributes = {
+					D89ABD8F2379342F00CF523D = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					D89ABDAE2379343100CF523D = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					D89ABDBD2379343200CF523D = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					D8B9D026243A4A6E006EC23E = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = D89ABD8F2379342F00CF523D;
+					};
+				};
+			};
+			buildConfigurationList = D89ABD8B2379342F00CF523D /* Build configuration list for PBXProject "Planning Cards" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				de,
+				ja,
+				da,
+			);
+			mainGroup = D89ABD872379342F00CF523D;
+			packageReferences = (
+				D8B15638238AFBB400B6903B /* XCRemoteSwiftPackageReference "Grid" */,
+			);
+			productRefGroup = D89ABD912379342F00CF523D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D89ABD8F2379342F00CF523D /* Planning Cards */,
+				D89ABDAE2379343100CF523D /* Planning Cards WatchKit App */,
+				D89ABDBD2379343200CF523D /* Planning Cards WatchKit Extension */,
+				D8B9D026243A4A6E006EC23E /* Planning Cards UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D89ABD8E2379342F00CF523D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A3F1FC2432B07C0037B840 /* Localizable.strings in Resources */,
+				D89ABDA02379343100CF523D /* LaunchScreen.storyboard in Resources */,
+				D8A3F1F62432B07C0037B840 /* InfoPlist.strings in Resources */,
+				D89ABD9D2379343100CF523D /* Preview Assets.xcassets in Resources */,
+				D89ABD9A2379343100CF523D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89ABDAD2379343100CF523D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89ABDB82379343200CF523D /* Assets.xcassets in Resources */,
+				D8A11B0E243CD0F20027254B /* InfoPlist.strings in Resources */,
+				D89ABDB62379343100CF523D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89ABDBC2379343200CF523D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89ABDCD2379343200CF523D /* Preview Assets.xcassets in Resources */,
+				D8A11B10243CD1A90027254B /* InfoPlist.strings in Resources */,
+				D8A3F1F92432B07C0037B840 /* Localizable.strings in Resources */,
+				D89ABDCA2379343200CF523D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B9D025243A4A6E006EC23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A11B11243D2FBF0027254B /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D89ABD8C2379342F00CF523D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DD49DD23FFAA6500EC0087 /* CardConfigurationSection.swift in Sources */,
+				D80C3690242DD66500E36614 /* KeyboardResponder.swift in Sources */,
+				D874751323FE4EA30027EA60 /* DeckEditor.swift in Sources */,
+				D8BF989B238B969A0034D8E1 /* SettingsView.swift in Sources */,
+				D8B058C7237FC6DA00E4199B /* DataManager.swift in Sources */,
+				D8DD49DB23FFAA1E00EC0087 /* DeckConfigurationSection.swift in Sources */,
+				D80C368E242DD64200E36614 /* CardModel.swift in Sources */,
+				D89ABD942379342F00CF523D /* AppDelegate.swift in Sources */,
+				D8CB34AE242C8EFE006A5B85 /* WatchSessionController.swift in Sources */,
+				D8B1563F238B022200B6903B /* CardView.swift in Sources */,
+				D89ABD962379342F00CF523D /* SceneDelegate.swift in Sources */,
+				D80E5F5A24121567000BA18A /* ColorSelector.swift in Sources */,
+				D89ABD982379342F00CF523D /* ContentView.swift in Sources */,
+				D8A11B16243D30960027254B /* SharedLocalizationClass.swift in Sources */,
+				D838FB4223E602690023FDD9 /* CardModifier.swift in Sources */,
+				D803FCA623F11948001609E1 /* DeckCreator.swift in Sources */,
+				D88BEACB23B54671009F67DB /* DeckSelector.swift in Sources */,
+				D89ABDE12379353100CF523D /* DataModel.xcdatamodeld in Sources */,
+				D80C3684242DD39600E36614 /* ValueDefinitions.swift in Sources */,
+				D83A3C2C2430891C000B4975 /* OpenSourceAttributionsView.swift in Sources */,
+				D803FCA423F10C02001609E1 /* DeckManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89ABDBA2379343200CF523D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89ABDC62379343200CF523D /* HostingController.swift in Sources */,
+				D89ABDC42379343200CF523D /* ContentView.swift in Sources */,
+				D8CB34AF242C8EFE006A5B85 /* WatchSessionController.swift in Sources */,
+				D89ABDC82379343200CF523D /* ExtensionDelegate.swift in Sources */,
+				D80C3685242DD39600E36614 /* ValueDefinitions.swift in Sources */,
+				D8745210242DB41D00F42655 /* CardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B9D023243A4A6E006EC23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B9D02A243A4A6E006EC23E /* Planning_Cards_UITests.swift in Sources */,
+				D8A11AFC243A7CC30027254B /* SnapshotHelper.swift in Sources */,
+				D8A11B17243D30960027254B /* SharedLocalizationClass.swift in Sources */,
+				D8A11B14243D306B0027254B /* CardModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D89ABDB22379343100CF523D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D89ABDAE2379343100CF523D /* Planning Cards WatchKit App */;
+			targetProxy = D89ABDB12379343100CF523D /* PBXContainerItemProxy */;
+		};
+		D89ABDC12379343200CF523D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D89ABDBD2379343200CF523D /* Planning Cards WatchKit Extension */;
+			targetProxy = D89ABDC02379343200CF523D /* PBXContainerItemProxy */;
+		};
+		D8B9D02D243A4A6E006EC23E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D89ABD8F2379342F00CF523D /* Planning Cards */;
+			targetProxy = D8B9D02C243A4A6E006EC23E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D89ABD9E2379343100CF523D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D89ABD9F2379343100CF523D /* Base */,
+				D8A3F1F22432AF150037B840 /* zh-Hans */,
+				D8362A0524345DB900EA8254 /* de */,
+				D86FBC4F2435539D0092FF7E /* ja */,
+				D889D7B924355A9E009DF153 /* da */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D89ABDB42379343100CF523D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D89ABDB52379343100CF523D /* Base */,
+				D8A3F1F32432AF150037B840 /* zh-Hans */,
+				D8362A0624345DB900EA8254 /* de */,
+				D86FBC502435539D0092FF7E /* ja */,
+				D889D7BA24355A9E009DF153 /* da */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		D8A11B00243C3B160027254B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8A11B01243C3B170027254B /* da */,
+				D8A11B03243C3B1F0027254B /* de */,
+				D8A11B04243C3B2D0027254B /* ja */,
+				D8A11B05243C3B330027254B /* zh-Hans */,
+				D87DB5DE243FD1F7005FBE48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8A3F1F42432B07C0037B840 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8A3F1F52432B07C0037B840 /* zh-Hans */,
+				D8362A0824345DB900EA8254 /* de */,
+				D86FBC522435539D0092FF7E /* ja */,
+				D889D7BC24355A9E009DF153 /* da */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8A3F1F72432B07C0037B840 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8A3F1F82432B07C0037B840 /* zh-Hans */,
+				D8362A0924345DB900EA8254 /* de */,
+				D86FBC532435539D0092FF7E /* ja */,
+				D889D7BD24355A9E009DF153 /* da */,
+				D8D89BFD243D750100CEA6E1 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D8A3F1FA2432B07C0037B840 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8A3F1FB2432B07C0037B840 /* zh-Hans */,
+				D8362A0724345DB900EA8254 /* de */,
+				D86FBC512435539D0092FF7E /* ja */,
+				D889D7BB24355A9E009DF153 /* da */,
+				D838337F243DA32700EB3ACA /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D89ABDCF2379343200CF523D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D89ABDD02379343200CF523D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D89ABDD22379343200CF523D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Planning Cards WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7LY8BAAH8V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Planning Cards WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andreyonadam.Planning-Cards.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		D89ABDD32379343200CF523D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Planning Cards WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7LY8BAAH8V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Planning Cards WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andreyonadam.Planning-Cards.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		D89ABDD62379343200CF523D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7LY8BAAH8V;
+				IBSC_MODULE = Planning_Cards_WatchKit_Extension;
+				INFOPLIST_FILE = "Planning Cards WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andreyonadam.Planning-Cards.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		D89ABDD72379343200CF523D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7LY8BAAH8V;
+				IBSC_MODULE = Planning_Cards_WatchKit_Extension;
+				INFOPLIST_FILE = "Planning Cards WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andreyonadam.Planning-Cards.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		D89ABDDA2379343200CF523D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Planning Cards/Preview Content\"";
+				DEVELOPMENT_TEAM = 7LY8BAAH8V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Planning Cards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andreyonadam.Planning-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D89ABDDB2379343200CF523D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Planning Cards/Preview Content\"";
+				DEVELOPMENT_TEAM = 7LY8BAAH8V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Planning Cards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andreyonadam.Planning-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8B9D02E243A4A6E006EC23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7LY8BAAH8V;
+				INFOPLIST_FILE = "Planning Cards UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andreyonadam.Planning-Cards-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Planning Cards";
+			};
+			name = Debug;
+		};
+		D8B9D02F243A4A6E006EC23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7LY8BAAH8V;
+				INFOPLIST_FILE = "Planning Cards UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andreyonadam.Planning-Cards-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Planning Cards";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D89ABD8B2379342F00CF523D /* Build configuration list for PBXProject "Planning Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89ABDCF2379343200CF523D /* Debug */,
+				D89ABDD02379343200CF523D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89ABDD12379343200CF523D /* Build configuration list for PBXNativeTarget "Planning Cards WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89ABDD22379343200CF523D /* Debug */,
+				D89ABDD32379343200CF523D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89ABDD52379343200CF523D /* Build configuration list for PBXNativeTarget "Planning Cards WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89ABDD62379343200CF523D /* Debug */,
+				D89ABDD72379343200CF523D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89ABDD92379343200CF523D /* Build configuration list for PBXNativeTarget "Planning Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89ABDDA2379343200CF523D /* Debug */,
+				D89ABDDB2379343200CF523D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8B9D030243A4A6E006EC23E /* Build configuration list for PBXNativeTarget "Planning Cards UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8B9D02E243A4A6E006EC23E /* Debug */,
+				D8B9D02F243A4A6E006EC23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8B15638238AFBB400B6903B /* XCRemoteSwiftPackageReference "Grid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIExtensions/Grid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8B15639238AFBB400B6903B /* Grid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8B15638238AFBB400B6903B /* XCRemoteSwiftPackageReference "Grid" */;
+			productName = Grid;
+		};
+		D8FAB24E242D78F000808385 /* Grid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8B15638238AFBB400B6903B /* XCRemoteSwiftPackageReference "Grid" */;
+			productName = Grid;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		D89ABDDF2379353100CF523D /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D89ABDE02379353100CF523D /* Models.xcdatamodel */,
+			);
+			currentVersion = D89ABDE02379353100CF523D /* Models.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D89ABD882379342F00CF523D /* Project object */;
+}
