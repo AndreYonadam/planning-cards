@@ -1,5 +1,9 @@
 # Planning Cards - an iOS and a WatchKit App
 
+## App Store
+
+[Planning Cards for iOS](https://apps.apple.com/us/app/planning-cards/id1486735680)
+
 ## Tech Stack
 
 Since I wanted to use Apple’s latest native tech stack, I ended up using SwiftUI for both the iOS app and the watch extension. This allowed me to share a few UI components between both platforms. I also used Grid, a SwiftUI library, to display the cards in a grid layout.
