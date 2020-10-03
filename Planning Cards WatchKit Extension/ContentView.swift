@@ -70,11 +70,11 @@ struct ContentView: View {
     }
     
     private func enableScreenDimmingAndRotation() {
-        WKExtension.shared().isAutorotating = true
+        WKExtension.shared().isAutorotating = false
     }
     
     private func disableScreenDimmingAndRotation() {
-        WKExtension.shared().isAutorotating = false
+        WKExtension.shared().isAutorotating = true
     }
 }
 
