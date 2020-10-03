@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1140"
+   LastUpgradeVersion = "1200"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -53,12 +53,11 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES"
-      notificationPayloadFile = "PushNotificationPayload.apns">
+      allowLocationSimulation = "YES">
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/Planning Cards WatchKit App">
+         RemotePath = "/Planning Cards">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D89ABDAE2379343100CF523D"
@@ -73,12 +72,11 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES"
-      notificationPayloadFile = "PushNotificationPayload.apns">
+      debugDocumentVersioning = "YES">
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/Planning Cards WatchKit App">
+         RemotePath = "/Planning Cards">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D89ABDAE2379343100CF523D"

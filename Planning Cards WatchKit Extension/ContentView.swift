@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import Grid
 
 struct ContentView: View {
     

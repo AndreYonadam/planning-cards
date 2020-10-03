@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import Grid
 import CoreData
 import Combine
 
@@ -29,23 +28,34 @@ struct ContentView: View {
     @State private var revealedSelectedCardOpacity = 0.0
 
     @ObservedObject var settingsManager: SettingsManager = SettingsManager()
+    let columns = [
+        GridItem(.adaptive(minimum: 100)),
+        GridItem(.adaptive(minimum: 100)),
+        GridItem(.adaptive(minimum: 100))
+    ]
 
     var body: some View {
         ZStack {
             NavigationView {
                 if defaultDeck.first?.cards?.count ?? 0 > 0 {
-                    Grid((defaultDeck.first?.cards?.array as! [Card]), id: \.self) { (card: Card) in
-                        CardView(cardColor: self.$settingsManager.cardColor,
-                                 cardFontColor: self.$settingsManager.cardFontColor,
-                                 value: card.value ?? "",
-                                 largeText: false)
-                            .onTapGesture {
-                                self.selectedCardValue = card.value ?? ""
+                    ScrollView {
+                        LazyVGrid(columns: columns, spacing: 20) {
+                            ForEach((defaultDeck.first?.cards?.array as! [Card]), id: \.self) { (card: Card) in
+                                CardView(cardColor: self.$settingsManager.cardColor,
+                                         cardFontColor: self.$settingsManager.cardFontColor,
+                                         value: card.value ?? "",
+                                         largeText: false)
+                                    .onTapGesture {
+                                        self.selectedCardValue = card.value ?? ""
 
-                                self.unrevealedCardOpacity = 1.0
-                                self.revealedSelectedCardOpacity = 0.0
-                                self.navigationOpacity = 0.0
+                                        self.unrevealedCardOpacity = 1.0
+                                        self.revealedSelectedCardOpacity = 0.0
+                                        self.navigationOpacity = 0.0
+                                }
+                            }
+                            .frame(width: 100, height: 100, alignment: .center)
                         }
+                        .frame(minHeight: 0, maxHeight: .infinity, alignment: .top)
                     }
                     .navigationBarTitle(defaultDeck.first?.name ?? "No default deck set!")
                     //FIXME: Button doesn't scale when text size changed while app is in background

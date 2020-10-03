@@ -55,11 +55,6 @@ struct SettingsView: View {
                     }
                 }
             }
-            Section(header: Text("About")) {
-                NavigationLink(destination: OpenSourceAttributionsView()) {
-                    Text("Open Source Libraries")
-                }
-            }
         }
         .listStyle(GroupedListStyle())
         .navigationBarTitle(SettingsText)

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		D80C3690242DD66500E36614 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80C368F242DD66500E36614 /* KeyboardResponder.swift */; };
 		D80E5F5A24121567000BA18A /* ColorSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E5F5924121567000BA18A /* ColorSelector.swift */; };
 		D838FB4223E602690023FDD9 /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838FB4123E602690023FDD9 /* CardModifier.swift */; };
-		D83A3C2C2430891C000B4975 /* OpenSourceAttributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83A3C2B2430891C000B4975 /* OpenSourceAttributionsView.swift */; };
 		D8745210242DB41D00F42655 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1563E238B022200B6903B /* CardView.swift */; };
 		D874751323FE4EA30027EA60 /* DeckEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874751223FE4EA30027EA60 /* DeckEditor.swift */; };
 		D88BEACB23B54671009F67DB /* DeckSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88BEACA23B54671009F67DB /* DeckSelector.swift */; };
@@ -46,7 +45,6 @@
 		D8A3F1F92432B07C0037B840 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8A3F1F72432B07C0037B840 /* Localizable.strings */; };
 		D8A3F1FC2432B07C0037B840 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8A3F1FA2432B07C0037B840 /* Localizable.strings */; };
 		D8B058C7237FC6DA00E4199B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B058C6237FC6DA00E4199B /* DataManager.swift */; };
-		D8B1563A238AFBB400B6903B /* Grid in Frameworks */ = {isa = PBXBuildFile; productRef = D8B15639238AFBB400B6903B /* Grid */; };
 		D8B1563F238B022200B6903B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1563E238B022200B6903B /* CardView.swift */; };
 		D8B9D02A243A4A6E006EC23E /* Planning_Cards_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B9D029243A4A6E006EC23E /* Planning_Cards_UITests.swift */; };
 		D8BF989B238B969A0034D8E1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BF989A238B969A0034D8E1 /* SettingsView.swift */; };
@@ -54,7 +52,6 @@
 		D8CB34AF242C8EFE006A5B85 /* WatchSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CB34AD242C8EFE006A5B85 /* WatchSessionController.swift */; };
 		D8DD49DB23FFAA1E00EC0087 /* DeckConfigurationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD49DA23FFAA1E00EC0087 /* DeckConfigurationSection.swift */; };
 		D8DD49DD23FFAA6500EC0087 /* CardConfigurationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD49DC23FFAA6500EC0087 /* CardConfigurationSection.swift */; };
-		D8FAB24F242D78F000808385 /* Grid in Frameworks */ = {isa = PBXBuildFile; productRef = D8FAB24E242D78F000808385 /* Grid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +117,6 @@
 		D8362A0924345DB900EA8254 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D838337F243DA32700EB3ACA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D838FB4123E602690023FDD9 /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
-		D83A3C2B2430891C000B4975 /* OpenSourceAttributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSourceAttributionsView.swift; sourceTree = "<group>"; };
 		D86FBC4F2435539D0092FF7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D86FBC502435539D0092FF7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Interface.strings; sourceTree = "<group>"; };
 		D86FBC512435539D0092FF7E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -182,7 +178,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8B1563A238AFBB400B6903B /* Grid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +185,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8FAB24F242D78F000808385 /* Grid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,14 +253,6 @@
 				D80C368D242DD64200E36614 /* CardModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		D83A3C28243087D3000B4975 /* Open Source Attributions */ = {
-			isa = PBXGroup;
-			children = (
-				D83A3C2B2430891C000B4975 /* OpenSourceAttributionsView.swift */,
-			);
-			path = "Open Source Attributions";
 			sourceTree = "<group>";
 		};
 		D89ABD872379342F00CF523D = {
@@ -363,7 +349,6 @@
 				D80C3688242DD44700E36614 /* Deck Selector */,
 				D80C3687242DD43E00E36614 /* Main Screen */,
 				D80C3689242DD45900E36614 /* Settings */,
-				D83A3C28243087D3000B4975 /* Open Source Attributions */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -426,7 +411,6 @@
 			);
 			name = "Planning Cards";
 			packageProductDependencies = (
-				D8B15639238AFBB400B6903B /* Grid */,
 			);
 			productName = "Planning Cards";
 			productReference = D89ABD902379342F00CF523D /* Planning Cards.app */;
@@ -463,7 +447,6 @@
 			);
 			name = "Planning Cards WatchKit Extension";
 			packageProductDependencies = (
-				D8FAB24E242D78F000808385 /* Grid */,
 			);
 			productName = "Planning Cards WatchKit Extension";
 			productReference = D89ABDBE2379343200CF523D /* Planning Cards WatchKit Extension.appex */;
@@ -496,7 +479,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Andre Yonadam";
 				TargetAttributes = {
 					D89ABD8F2379342F00CF523D = {
@@ -528,7 +511,6 @@
 			);
 			mainGroup = D89ABD872379342F00CF523D;
 			packageReferences = (
-				D8B15638238AFBB400B6903B /* XCRemoteSwiftPackageReference "Grid" */,
 			);
 			productRefGroup = D89ABD912379342F00CF523D /* Products */;
 			projectDirPath = "";
@@ -610,7 +592,6 @@
 				D88BEACB23B54671009F67DB /* DeckSelector.swift in Sources */,
 				D89ABDE12379353100CF523D /* DataModel.xcdatamodeld in Sources */,
 				D80C3684242DD39600E36614 /* ValueDefinitions.swift in Sources */,
-				D83A3C2C2430891C000B4975 /* OpenSourceAttributionsView.swift in Sources */,
 				D803FCA423F10C02001609E1 /* DeckManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -761,6 +742,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -785,7 +767,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -822,6 +804,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -840,7 +823,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -945,6 +928,7 @@
 				DEVELOPMENT_TEAM = 7LY8BAAH8V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Planning Cards/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -965,6 +949,7 @@
 				DEVELOPMENT_TEAM = 7LY8BAAH8V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Planning Cards/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1065,30 +1050,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		D8B15638238AFBB400B6903B /* XCRemoteSwiftPackageReference "Grid" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftUIExtensions/Grid.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.7.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D8B15639238AFBB400B6903B /* Grid */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D8B15638238AFBB400B6903B /* XCRemoteSwiftPackageReference "Grid" */;
-			productName = Grid;
-		};
-		D8FAB24E242D78F000808385 /* Grid */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D8B15638238AFBB400B6903B /* XCRemoteSwiftPackageReference "Grid" */;
-			productName = Grid;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D89ABDDF2379353100CF523D /* DataModel.xcdatamodeld */ = {
